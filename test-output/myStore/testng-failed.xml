@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [myStore]">
+  <listeners>
+    <listener class-name="base.CustomListeners"/>
+  </listeners>
+  <test name="signupTest(failed)">
+    <classes>
+      <class name="testcases.signupTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="signup"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- testcases.signupTest -->
+    </classes>
+  </test> <!-- signupTest(failed) -->
+</suite> <!-- Failed suite [myStore] -->
