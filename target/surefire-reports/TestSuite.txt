@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 45.688 s <<< FAILURE! - in TestSuite
+testcases.TC001LoginTest.login  Time elapsed: 2.332 s  <<< FAILURE!
+java.lang.AssertionError: expected [My account - My Store] but found [Login - My Store]
+	at testcases.TC001LoginTest.login(TC001LoginTest.java:33)
+

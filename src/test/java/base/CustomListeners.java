@@ -1,14 +1,12 @@
 package base;
 
 import java.io.IOException;
-
 import org.testng.ISuite;
 import org.testng.ISuiteListener;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 import com.relevantcodes.extentreports.LogStatus;
-
 import utilities.Utilities;
 
 public class CustomListeners extends BaseClass implements ITestListener,ISuiteListener  {
@@ -62,8 +60,6 @@ public class CustomListeners extends BaseClass implements ITestListener,ISuiteLi
 	}
 	
 	public void onStart(ISuite suite) {
-		// TODO Auto-generated method stub
-		
 	}
 
 	public void onFinish(ISuite suite) {

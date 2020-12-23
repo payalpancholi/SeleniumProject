@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [myStore]">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [MyStore]">
   <listeners>
     <listener class-name="base.CustomListeners"/>
   </listeners>
-  <test name="signupTest(failed)">
+  <test thread-count="5" name="Login Test(failed)">
     <classes>
-      <class name="testcases.signupTest">
+      <class name="testcases.LoginTest">
         <methods>
           <include name="tearDown"/>
-          <include name="signup"/>
+          <include name="login" invocation-numbers="0"/>
           <include name="init"/>
         </methods>
-      </class> <!-- testcases.signupTest -->
+      </class> <!-- testcases.LoginTest -->
     </classes>
-  </test> <!-- signupTest(failed) -->
-</suite> <!-- Failed suite [myStore] -->
+  </test> <!-- Login Test(failed) -->
+</suite> <!-- Failed suite [MyStore] -->

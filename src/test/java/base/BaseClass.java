@@ -13,9 +13,9 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
+
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
-
 import pages.AddressPage;
 import pages.CategoryPage;
 import pages.ContactUsPage;
@@ -29,14 +29,14 @@ import pages.ShippingPage;
 import utilities.ExcelReader;
 import utilities.ExtentManager;
 
-
-public class BaseClass {
+public class BaseClass{
 	
 	public static WebDriver driver = null;
 	public static ExcelReader excelReader;
 	public Logger appLogs = Logger.getLogger("qaLogger");
 	public ExtentReports reports = ExtentManager.getInstance();
 	public static ExtentTest test;
+	
 	
 	//Page Classes
 	public HomePage homePage;
@@ -62,6 +62,7 @@ public class BaseClass {
 			if(config.getProperty("browser").equals("chrome")) {
 				System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir") +"\\src\\test\\resources\\driverexecutables\\chromedriver.exe");
 				driver = new ChromeDriver();
+				//test.log(LogStatus.INFO, "chrome browser launched");
 				appLogs.debug("chrome browser launched");
 			}else if (config.getProperty("browser").equals("firefox")) {
 				System.setProperty("webdriver.gecko.driver", "geckodriver.exe");

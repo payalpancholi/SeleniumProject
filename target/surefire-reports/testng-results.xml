@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="8" total="14" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="MyStore" duration-ms="34411" started-at="2020-12-23T03:38:33Z" finished-at="2020-12-23T03:39:08Z">
+    <groups>
+    </groups>
+    <test name="Tests" duration-ms="34411" started-at="2020-12-23T03:38:33Z" finished-at="2020-12-23T03:39:08Z">
+      <class name="testcases.TC001LoginTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:testcases.TC001LoginTest@e056f20]" name="init" is-config="true" duration-ms="8797" started-at="2020-12-23T03:38:25Z" finished-at="2020-12-23T03:38:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="FAIL" signature="login(java.lang.String, java.lang.String)[pri:0, instance:testcases.TC001LoginTest@e056f20]" name="login" duration-ms="2322" started-at="2020-12-23T03:38:34Z" data-provider="Credentials" finished-at="2020-12-23T03:38:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Payal]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Nopassword]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [My account - My Store] but found [Login - My Store]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [My account - My Store] but found [Login - My Store]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at testcases.TC001LoginTest.login(TC001LoginTest.java:33)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:testcases.TC001LoginTest@e056f20]" name="login" duration-ms="2806" started-at="2020-12-23T03:38:37Z" data-provider="Credentials" finished-at="2020-12-23T03:38:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[payal@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TC001LoginTest@e056f20]" name="tearDown" is-config="true" duration-ms="749" started-at="2020-12-23T03:39:08Z" finished-at="2020-12-23T03:39:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.TC001LoginTest -->
+      <class name="testcases.TC002BuyingProductTest">
+        <test-method status="PASS" signature="buyProduct()[pri:0, instance:testcases.TC002BuyingProductTest@4b0b0854]" name="buyProduct" duration-ms="9071" started-at="2020-12-23T03:38:40Z" finished-at="2020-12-23T03:38:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buyProduct -->
+      </class> <!-- testcases.TC002BuyingProductTest -->
+      <class name="testcases.TC003UpdateAddressTest">
+        <test-method status="PASS" signature="updateAddress()[pri:0, instance:testcases.TC003UpdateAddressTest@19bb07ed]" name="updateAddress" duration-ms="5077" started-at="2020-12-23T03:38:49Z" finished-at="2020-12-23T03:38:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateAddress -->
+      </class> <!-- testcases.TC003UpdateAddressTest -->
+      <class name="testcases.TC004WriteProductReviewTest">
+        <test-method status="PASS" signature="addProductReview()[pri:0, instance:testcases.TC004WriteProductReviewTest@10e41621]" name="addProductReview" duration-ms="4688" started-at="2020-12-23T03:38:54Z" finished-at="2020-12-23T03:38:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addProductReview -->
+      </class> <!-- testcases.TC004WriteProductReviewTest -->
+      <class name="testcases.TC005ContactUsTest">
+        <test-method status="PASS" signature="contactUs()[pri:0, instance:testcases.TC005ContactUsTest@353d0772]" name="contactUs" duration-ms="8672" started-at="2020-12-23T03:38:59Z" finished-at="2020-12-23T03:39:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contactUs -->
+      </class> <!-- testcases.TC005ContactUsTest -->
+    </test> <!-- Tests -->
+  </suite> <!-- MyStore -->
+</testng-results>
